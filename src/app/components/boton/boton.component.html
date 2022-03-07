@@ -1,0 +1,120 @@
+<div class="container-celda">
+  <div class="card">
+    <div class="face front" [class]="claseFront1" >
+      <button class="btn-celda" (click)="goCelda1()" *ngIf="celda1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda1()" *ngIf="!celda1" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack1">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front" [class]="claseFront2" >
+      <button class="btn-celda" (click)="goCelda2()" *ngIf="celda2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda2()" *ngIf="!celda2" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack2">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front" [class]="claseFront3" >
+      <button class="btn-celda" (click)="goCelda3()" *ngIf="celda3">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda3()" *ngIf="!celda3" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack3">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front" [class]="claseFront4" >
+      <button class="btn-celda" (click)="goCelda4()" *ngIf="celda4">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda4()" *ngIf="!celda4" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack4">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front" [class]="claseFront5" >
+      <button class="btn-celda" (click)="goCelda5()" *ngIf="celda5">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda5()" *ngIf="!celda5" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack5">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front" [class]="claseFront6" >
+      <button class="btn-celda" (click)="goCelda6()" *ngIf="celda6">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda6()" *ngIf="!celda6" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack6">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front" [class]="claseFront7" >
+      <button class="btn-celda" (click)="goCelda7()" *ngIf="celda7">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda7()" *ngIf="!celda7" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack7">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front" [class]="claseFront8" >
+      <button class="btn-celda" (click)="goCelda8()" *ngIf="celda8">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda8()" *ngIf="!celda8" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack8">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face front" [class]="claseFront9" >
+      <button class="btn-celda" (click)="goCelda9()" *ngIf="celda9">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+      <button class="btn-celda block" (click)="goCelda9()" *ngIf="!celda9" [disabled]="true">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" _ngcontent-mcx-c79="" data-inline="true" class="iconify lastplays__grid__bet__finish" data-icon="mdi-clover" style="vertical-align: -0.125em; transform: rotate(360deg);"><path fill="currentColor" d="M12 11.18c3.3-3 5-4.54 5-6.49C17 3.19 15.75 2 14.25 2c-.86 0-1.68.36-2.25 1c-.57-.64-1.39-1-2.31-1C8.19 2 7 3.25 7 4.75c0 1.89 1.7 3.43 5 6.43m-.82.82c-3-3.3-4.54-5-6.49-5C3.19 7 2 8.25 2 9.75c0 .86.36 1.68 1 2.25c-.64.57-1 1.39-1 2.31C2 15.81 3.25 17 4.75 17c1.89 0 3.43-1.7 6.43-5m1.65 0c2.99 3.3 4.53 5 6.48 5c1.5 0 2.69-1.25 2.69-2.75c0-.86-.36-1.68-1-2.25c.64-.57 1-1.39 1-2.31C22 8.19 20.75 7 19.25 7c-1.89 0-3.43 1.7-6.42 5m-.83.82c-3.3 3-5 4.54-5 6.49C7 20.81 8.25 22 9.75 22c.86 0 1.68-.36 2.25-1c.57.64 1.39 1 2.31 1c1.5 0 2.69-1.25 2.69-2.75c0-1.89-1.7-3.43-5-6.43Z"></path></svg>
+      </button>
+    </div>
+    <div class="face back" [class]="claseBack9">
+      <h4>Resultado</h4>
+    </div>
+  </div>
+</div>
+
