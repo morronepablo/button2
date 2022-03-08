@@ -34,6 +34,7 @@ export class BotonComponent implements OnInit {
   public claseBack8: string = "";
   public claseFront9: string = "";
   public claseBack9: string = "";
+  public playStart = false;
   public celdaPush: string;
 
   constructor() {

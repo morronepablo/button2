@@ -73,6 +73,20 @@
   background-color: grey;
 }
 
+.container-play {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 380px;
+  margin-top: 80px;
+}
+.btn-play {
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  margin: auto;
+}
+
 @media(min-width: 320px) and (max-width: 767px) {
   .fixcontent{
     max-width: 320px;
