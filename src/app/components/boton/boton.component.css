@@ -66,11 +66,21 @@
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid #BFBFBF;
+  cursor: pointer;
   box-shadow: 10px 10px 5px #aaaaaa;
+}
+.btn-play {
+  background: #529DFE;
+  color: yellow;
+  border: none;
+  border-radius: 10px;
+  width: 100% !important;
+  height: 70px !important;
+  cursor: pointer;
 }
 
 .block {
-  background-color: grey;
+  background-color: whitesmoke;
 }
 
 .container-play {
