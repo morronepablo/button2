@@ -45,7 +45,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 .card .clickFront {
@@ -55,6 +55,9 @@
   transform: perspective(600px) rotateY(360deg);
 }
 
+.click {
+  display: none!important;
+}
 
 .btn-celda {
   width: 100px;
@@ -67,8 +70,49 @@
   background-color: #fff;
   border: 1px solid #BFBFBF;
   cursor: pointer;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 5px #aaaaaa;
 }
+.btn-celda.block h5 {
+  display: none;
+}
+.btn-celda h5 {
+  display: none;
+}
+.btn-celda.block:hover #trebol1 {
+  display: none;
+}
+.btn-celda.block:hover #trebol2 {
+  display: none;
+}
+.btn-celda.block:hover #trebol3 {
+  display: none;
+}
+.btn-celda.block:hover #trebol4 {
+  display: none;
+}
+.btn-celda.block:hover #trebol5 {
+  display: none;
+}
+.btn-celda.block:hover #trebol6 {
+  display: none;
+}
+.btn-celda.block:hover #trebol7 {
+  display: none;
+}
+.btn-celda.block:hover #trebol8 {
+  display: none;
+}
+.btn-celda.block:hover #trebol9 {
+  display: none;
+}
+
+.face.front:hover h5 {
+  display: block;
+  font-size: 9px;
+  color: #529DFE;
+  animation: rotate 3.5s linear infinite;
+}
+
 .btn-play {
   background: #529DFE;
   color: yellow;
@@ -79,9 +123,31 @@
   cursor: pointer;
 }
 
+.textGo {
+  content: '';
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
 .block {
   background-color: whitesmoke;
 }
+
 
 .container-play {
   display: flex;
@@ -95,6 +161,24 @@
   height: 50px;
   font-size: 30px;
   margin: auto;
+}
+
+.intermitente{
+  padding: 20px 20px;
+
+  animation: infinite resplandorAnimation 1s;
+
+}
+@keyframes resplandorAnimation {
+  0%,100%{
+
+    background: #2381fc;
+  }
+  50%{
+
+    background: #006eff;
+  }
+
 }
 
 @media(min-width: 320px) and (max-width: 767px) {

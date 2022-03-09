@@ -34,6 +34,7 @@ export class BotonComponent implements OnInit {
   public claseBack8: string = "";
   public claseFront9: string = "";
   public claseBack9: string = "";
+  public clasePresione: string = "";
   public contadorCeldas: number = 0;
   public playStart = true;
   public celdaPush: string;
@@ -186,6 +187,7 @@ export class BotonComponent implements OnInit {
       this.contadorCeldas = 0;
     }
     this.playStart = false;
+    this.clasePresione = 'click'
   }
 
 }
